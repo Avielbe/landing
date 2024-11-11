@@ -7,7 +7,10 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-800 p-4 fixed w-full top-0 z-10">
             <div className="container mx-auto flex items-center justify-between">
-                <h1 className="text-white text-2xl font-bold">My Portfolio</h1>
+                <a href='#home'>
+                    <img src='/logo-SparkByte.gif'alt="SparkByte Logo"  className="h-24 w-auto" />
+                </a>
+                {/* <h1 className="text-white text-2xl font-bold">My Portfolio</h1> */}
                 <button
                     className="text-white md:hidden"
                     onClick={() => setIsOpen(!isOpen)}
