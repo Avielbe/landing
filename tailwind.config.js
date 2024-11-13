@@ -20,6 +20,10 @@ module.exports = {
           "100%": { transform: "translateY(-100%)", opacity: 0.1 },
         },
       },
+      fontFamily: {
+        "roboto": ['roboto', 'sans-serif'],
+        "montserrat": ['montserrat', 'sans-serif']
+      },
     },
   },
   variants: {
