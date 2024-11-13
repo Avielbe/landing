@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import {Montserrat} from '@next/font/google'
 
 const Hero = () => (
   <section className="relative h-screen flex items-center justify-center">

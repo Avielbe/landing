@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-800 p-4 fixed w-full top-0 z-10">
+        <nav className="bg-gray-800 p-4 fixed w-full top-0 z-50 rounded-b-3xl shadow-lg">
             <div className="container mx-auto flex items-center justify-between">
                 <a href='#home'>
                     <img src='/logo-SparkByte.gif'alt="SparkByte Logo"  className="h-24 w-auto" />

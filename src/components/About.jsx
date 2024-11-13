@@ -78,7 +78,7 @@ const About = () => (
       >
         <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
         <ul className="list-disc list-inside text-lg text-gray-600 space-y-2">
-          {['Custom Landing Page Development', 'Web Application Creation', 'Interactive Educational Tools', 'Frontend & Backend Development', 'UI/UX Design Solutions'].map((service, index) => (
+          {['Custom Landing Page Development', 'Web Application Creation', 'Interactive Educational Tools', 'Frontend & Backend Development'].map((service, index) => (
             <motion.li 
               key={index} 
               initial={{ opacity: 0, x: -30 }}
