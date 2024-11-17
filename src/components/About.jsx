@@ -1,89 +1,221 @@
 // // src/components/About.jsx
 // import React from 'react';
+// import { motion } from 'framer-motion';
 
 // const About = () => (
-//     <section id="about" className="py-16 bg-gray-100" data-aos="fade-up">
+//   <section
+//     id="about"
+//     className="py-16 bg-gradient-to-r from-gray-50 via-white to-gray-50 text-gray-800"
+//   >
+//     <div className="container mx-auto px-6 md:px-0">
+//       {/* Section Header with Gradient Text */}
+//       <motion.h2
+//         className="text-5xl md:text-6xl font-montserrat font-bold text-center mb-10 bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text"
+//         initial={{ opacity: 0, y: -20 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 0.8 }}
+//       >
+//         About SparkByte
+//       </motion.h2>
 
-//         <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-0">
-//             {/* Image */}
-//             <div className="w-full md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0">
-//                 <img
-//                     src="path-to-your-image.jpg"
-//                     alt="Profile"
-//                     className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-500"
-//                 />
-//             </div>
+//       {/* Subheading */}
+//       <motion.p
+//         className="text-lg md:text-xl font-roboto text-center mb-12 leading-relaxed tracking-wide text-gray-700"
+//         initial={{ opacity: 0 }}
+//         whileInView={{ opacity: 1 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 1, delay: 0.3 }}
+//       >
+//         Your go-to partner for transforming digital ideas into reality. At SparkByte, 
+//         we blend creativity and technology to deliver modern, scalable web solutions.
+//       </motion.p>
 
-//             {/* Text Content */}
-//             <div className="w-full md:w-1/2 md:pl-10 text-center md:text-left">
-//                 <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-//                 <p className="text-lg text-gray-600 mb-4">
-//                     I’m a passionate web developer with expertise in creating dynamic, user-friendly web experiences. I love turning complex problems into simple, beautiful, and intuitive designs.
-//                 </p>
-//                 <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Learn More</button>
-//             </div>
-//         </div>
-//     </section>
+//       {/* Graphic Divider */}
+//       <div className="flex justify-center items-center mb-12">
+//         <motion.div
+//           className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full"
+//           initial={{ scaleX: 0 }}
+//           whileInView={{ scaleX: 1 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.8, delay: 0.5 }}
+//         />
+//       </div>
+
+//       {/* Our Approach Section */}
+//       <motion.div
+//         className="mb-12"
+//         initial={{ opacity: 0, x: -50 }}
+//         whileInView={{ opacity: 1, x: 0 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 0.8 }}
+//       >
+//         <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-600">
+//           Our Approach
+//         </h3>
+//         <p className="text-lg font-roboto leading-relaxed tracking-wide text-gray-700">
+//           Every great project starts with understanding your unique needs. 
+//           We combine personalized attention with cutting-edge technology to create 
+//           solutions that are as innovative as they are effective.
+//         </p>
+//       </motion.div>
+
+//       {/* Our Services Section */}
+//       <motion.div
+//         className="mb-12"
+//         initial={{ opacity: 0, x: 50 }}
+//         whileInView={{ opacity: 1, x: 0 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 0.8, delay: 0.2 }}
+//       >
+//         <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-600">
+//           Our Services
+//         </h3>
+//         <ul className="list-disc list-inside text-lg font-roboto text-gray-700 space-y-3">
+//           {[
+//             'Custom Landing Page Development',
+//             'Scalable Web Applications',
+//             'Interactive Educational Tools',
+//             'Fullstack Development Expertise',
+//           ].map((service, index) => (
+//             <motion.li
+//               key={index}
+//               initial={{ opacity: 0, y: 10 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.5, delay: 0.2 * index }}
+//             >
+//               {service}
+//             </motion.li>
+//           ))}
+//         </ul>
+//       </motion.div>
+
+//       {/* Why Choose Us Section */}
+//       <motion.div
+//         className="mb-12"
+//         initial={{ opacity: 0, y: 50 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 0.8, delay: 0.3 }}
+//       >
+//         <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-600">
+//           Why Choose SparkByte
+//         </h3>
+//         <ul className="space-y-3 text-lg font-roboto text-gray-700">
+//           <li>
+//             <span className="font-bold text-indigo-600">Personalized Solutions:</span> 
+//             Each project is tailored to your vision.
+//           </li>
+//           <li>
+//             <span className="font-bold text-indigo-600">Innovative Thinking:</span> 
+//             Bringing fresh perspectives to every challenge.
+//           </li>
+//           <li>
+//             <span className="font-bold text-indigo-600">Fast Turnarounds:</span> 
+//             Timely delivery without compromising quality.
+//           </li>
+//           <li>
+//             <span className="font-bold text-indigo-600">Competitive Pricing:</span> 
+//             Affordable rates for high-end results.
+//           </li>
+//         </ul>
+//       </motion.div>
+
+//       {/* Closing Statement */}
+//       <motion.p
+//         className="text-lg md:text-xl font-roboto text-center mt-12 leading-relaxed tracking-wide text-gray-700"
+//         initial={{ opacity: 0 }}
+//         whileInView={{ opacity: 1 }}
+//         viewport={{ once: true }}
+//         transition={{ duration: 1, delay: 0.6 }}
+//       >
+//         Let us help you bring your digital vision to life. Partner with SparkByte and 
+//         discover what’s possible when creativity meets technology.
+//       </motion.p>
+//     </div>
+//   </section>
 // );
 
 // export default About;
-
 // src/components/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => (
-  <section id="about" className="py-16 bg-gradient-to-r from-gray-100 via-white to-gray-100 text-gray-800">
-    <div className="container mx-auto px-6 md:px-0">
-      {/* Section Header with Background Animation */}
-      <motion.h2 
-        className="text-4xl font-bold text-center mb-8 text-blue-600"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
+  <section
+    id="about"
+    className="py-16 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 text-white relative overflow-hidden"
+  >
+    {/* Subtle Background Symbols */}
+    <div className="absolute inset-0 pointer-events-none">
+      <div className="w-64 h-64 bg-blue-900 opacity-10 rounded-full blur-3xl top-10 left-10 absolute"></div>
+      <div className="w-72 h-72 bg-indigo-700 opacity-10 rounded-full blur-3xl bottom-10 right-20 absolute"></div>
+    </div>
+
+    <div className="container mx-auto px-6 md:px-0 relative z-10">
+      {/* Section Header with Darker Blue Theme */}
+      <motion.h2
+        className="text-5xl md:text-6xl font-montserrat font-bold text-center mb-10 text-blue-400"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }} // Repeat animations
+        transition={{ duration: 0.8 }}
       >
         About SparkByte
       </motion.h2>
-      
-      {/* About Description with Typing Animation */}
-      <motion.p 
-        className="text-lg text-center mb-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        style={{ fontFamily: 'Courier New, monospace' }} // Adds a typewriter-style font
-      >
-        At SparkByte, we transform digital ideas into reality through creative web development and innovative application solutions. Founded by a fullstack developer with a passion for clean code and intuitive design, we specialize in crafting custom digital experiences that make an impact.
-      </motion.p>
 
-      {/* Our Approach with Fade and Slide Animation */}
-      <motion.div 
-        className="mb-12"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+      {/* Subheading */}
+      <motion.p
+        className="text-lg md:text-xl font-roboto text-center mb-12 leading-relaxed tracking-wide text-gray-300"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }} // Repeat animations
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <h3 className="text-2xl font-semibold mb-4">Our Approach</h3>
-        <p className="text-lg text-gray-600">
-          We believe in the power of personal attention and creative problem-solving. Every project begins with understanding your unique needs, followed by implementing solutions that combine technical expertise with creative thinking.
+        Your trusted partner for innovative web solutions. At SparkByte, we combine creativity and cutting-edge technology to deliver impactful digital experiences.
+      </motion.p>
+
+      {/* Our Approach Section */}
+      <motion.div
+        className="mb-12"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false }} // Repeat animations
+        transition={{ duration: 0.8 }}
+      >
+        <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-400">
+          Our Approach
+        </h3>
+        <p className="text-lg font-roboto leading-relaxed tracking-wide text-gray-300">
+          We start by understanding your unique goals. Through collaboration and innovative problem-solving, we design tailored solutions that make a lasting impact.
         </p>
       </motion.div>
 
-      {/* Our Services with Staggered Animation */}
-      <motion.div 
+      {/* Our Services Section */}
+      <motion.div
         className="mb-12"
         initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false }} // Repeat animations
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
-        <ul className="list-disc list-inside text-lg text-gray-600 space-y-2">
-          {['Custom Landing Page Development', 'Web Application Creation', 'Interactive Educational Tools', 'Frontend & Backend Development'].map((service, index) => (
-            <motion.li 
-              key={index} 
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
+        <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-400">
+          Our Services
+        </h3>
+        <ul className="list-disc list-inside text-lg font-roboto text-gray-300 space-y-3">
+          {[
+            'Custom Landing Page Development',
+            'Scalable Web Applications',
+            'Interactive Educational Tools',
+            'Fullstack Development Expertise',
+          ].map((service, index) => (
+            <motion.li
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }} // Repeat animations
+              transition={{ duration: 0.5, delay: 0.2 * index }}
             >
               {service}
             </motion.li>
@@ -91,46 +223,46 @@ const About = () => (
         </ul>
       </motion.div>
 
-      {/* Why Choose SparkByte with Bounce Effect */}
-      <motion.div 
+      {/* Why Choose Us Section */}
+      <motion.div
         className="mb-12"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5, type: 'spring', stiffness: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }} // Repeat animations
+        transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h3 className="text-2xl font-semibold mb-4">Why Choose SparkByte</h3>
-        <ul className="space-y-2 text-lg text-gray-600">
-          <li><span className="font-bold">Personal Attention:</span> Direct collaboration with your developer throughout the project</li>
-          <li><span className="font-bold">Creative Solutions:</span> Innovative approaches to digital challenges</li>
-          <li><span className="font-bold">Technical Excellence:</span> Modern tech stack including React, Node.js, and more</li>
-          <li><span className="font-bold">Competitive Pricing:</span> Quality solutions at accessible rates</li>
-          <li><span className="font-bold">Rapid Development:</span> From concept to production in efficient timeframes</li>
+        <h3 className="text-3xl md:text-4xl font-montserrat font-semibold mb-6 text-indigo-400">
+          Why Choose SparkByte
+        </h3>
+        <ul className="space-y-3 text-lg font-roboto text-gray-300">
+          <li>
+            <span className="font-bold text-indigo-400">Personalized Solutions:</span> 
+            Every project tailored to your needs.
+          </li>
+          <li>
+            <span className="font-bold text-indigo-400">Innovative Thinking:</span> 
+            Fresh approaches to digital challenges.
+          </li>
+          <li>
+            <span className="font-bold text-indigo-400">Fast Turnarounds:</span> 
+            Timely delivery without compromising quality.
+          </li>
+          <li>
+            <span className="font-bold text-indigo-400">Competitive Pricing:</span> 
+            Affordable rates for premium results.
+          </li>
         </ul>
       </motion.div>
 
-      {/* Our Stack with Rotate Animation
-      <motion.div 
-        className="mb-12"
-        initial={{ opacity: 0, rotate: -10 }}
-        animate={{ opacity: 1, rotate: 0 }}
+      {/* Closing Statement */}
+      <motion.p
+        className="text-lg md:text-xl font-roboto text-center mt-12 leading-relaxed tracking-wide text-gray-300"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }} // Repeat animations
         transition={{ duration: 1, delay: 0.6 }}
       >
-        <h3 className="text-2xl font-semibold mb-4">Our Stack</h3>
-        <ul className="list-disc list-inside text-lg text-gray-600 mt-2">
-          {['React & React Native', 'Node.js & Express', 'MongoDB', 'Docker', 'Tailwind CSS'].map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
-      </motion.div> */}
-
-      {/* Closing Statement with Delayed Fade-in */}
-      <motion.p 
-        className="text-lg text-center mt-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.7 }}
-      >
-        Whether you're a startup looking for your first landing page or an established business needing a custom web application, SparkByte is ready to turn your vision into reality.
+        Let SparkByte bring your digital vision to life. Creativity meets technology to create solutions that truly matter.
       </motion.p>
     </div>
   </section>
