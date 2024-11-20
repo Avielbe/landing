@@ -41,9 +41,9 @@ const projects = [
       'Dockerized architecture for seamless deployment.',
     ],
     images: [
-      '/assets/kashlapp-1.png',
-      '/assets/kashlapp-2.png',
-      '/assets/kashlapp-ad.png',
+      '/assets/superclick-1.png',
+      '/assets/superclick-2.png',
+      '/assets/superclick-ad.gif',
     ],
     link: 'https://github.com/username/ecommerce-project', // Replace with actual GitHub link
     linkText: 'View on GitHub',
