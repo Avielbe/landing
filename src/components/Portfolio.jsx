@@ -23,7 +23,7 @@ const projects = [
       '/assets/kashlapp-ad.png',
     ],
     link: 'https://tinyurl.com/KASHL-APP', // Replace with actual link
-    linkText: 'View Live Project',
+    linkText: 'View Live App',
   },
   {
     title: 'Super Click',
@@ -45,8 +45,8 @@ const projects = [
       '/assets/superclick-2.png',
       '/assets/superclick-ad.gif',
     ],
-    link: 'https://github.com/username/ecommerce-project', // Replace with actual GitHub link
-    linkText: 'View on GitHub',
+    link: 'https://e-commerceil.vercel.app/', 
+    linkText: 'View Live Website',
   },
 ];
 
